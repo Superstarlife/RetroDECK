@@ -64,54 +64,54 @@ modules:
     buildsystem: simple
     build-commands:
 
-        # Prep the ES-DE and RetroArch config files
-        - rm -rf /app/share/emulationstation/resources/systems/unix/es_find_rules.xml
-        - cp es_find_rules.xml /app/share/emulationstation/resources/systems/unix/
-        - rm -rf /app/share/emulationstation/resources/systems/unix/es_systems.xml
-        - cp es_systems.xml /app/share/emulationstation/resources/systems/unix/
-        # These must be put in home folder, managed by retrodeck.sh
-        - mkdir -p ${FLATPAK_DEST}/retrodeck/
-        - cp es_settings.xml ${FLATPAK_DEST}/retrodeck/es_settings.xml
+        # # Prep the ES-DE and RetroArch config files
+        # - rm -rf /app/share/emulationstation/resources/systems/unix/es_find_rules.xml
+        # - cp es_find_rules.xml /app/share/emulationstation/resources/systems/unix/
+        # - rm -rf /app/share/emulationstation/resources/systems/unix/es_systems.xml
+        # - cp es_systems.xml /app/share/emulationstation/resources/systems/unix/
+        # # These must be put in home folder, managed by retrodeck.sh
+        # - mkdir -p ${FLATPAK_DEST}/retrodeck/
+        # - cp es_settings.xml ${FLATPAK_DEST}/retrodeck/es_settings.xml
 
-        # Logo, res
-        - rm -f /app/share/emulationstation/resources/graphics/splash.svg
-        - cp splash.svg /app/share/emulationstation/resources/graphics/splash.svg
-        - cp icon.svg /app/share/icons/hicolor/scalable/apps/net.retrodeck.retrodeck.svg
+        # # Logo, res
+        # - rm -f /app/share/emulationstation/resources/graphics/splash.svg
+        # - cp splash.svg /app/share/emulationstation/resources/graphics/splash.svg
+        # - cp icon.svg /app/share/icons/hicolor/scalable/apps/net.retrodeck.retrodeck.svg
 
-        # Tools
-        - mkdir -p ${FLATPAK_DEST}/retrodeck/tools/
-        - cp start-*.sh ${FLATPAK_DEST}/retrodeck/tools/
-        - cp move-roms.sh ${FLATPAK_DEST}/retrodeck/tools/
-        - cp tools-gamelist.xml ${FLATPAK_DEST}/retrodeck/
+        # # Tools
+        # - mkdir -p ${FLATPAK_DEST}/retrodeck/tools/
+        # - cp start-*.sh ${FLATPAK_DEST}/retrodeck/tools/
+        # - cp move-roms.sh ${FLATPAK_DEST}/retrodeck/tools/
+        # - cp tools-gamelist.xml ${FLATPAK_DEST}/retrodeck/
         
-        - cp retrodeck.sh /app/bin/retrodeck.sh
-        - chmod +x /app/bin/retrodeck.sh
+        # - cp retrodeck.sh /app/bin/retrodeck.sh
+        # - chmod +x /app/bin/retrodeck.sh
         
-        # Desktop entry
-        - cp net.retrodeck.retrodeck.desktop /app/share/applications/net.retrodeck.retrodeck.desktop
+        # # Desktop entry
+        # - cp net.retrodeck.retrodeck.desktop /app/share/applications/net.retrodeck.retrodeck.desktop
 
-        # Steam Grids
-        - mkdir -p ${FLATPAK_DEST}/retrodeck/steam/
-        - cp banner_main.png ${FLATPAK_DEST}/retrodeck/steam/
-        - cp poster_main.png ${FLATPAK_DEST}/retrodeck/steam/
-        - cp poster_main_nodecklogo.png ${FLATPAK_DEST}/retrodeck/steam/
+        # # Steam Grids
+        # - mkdir -p ${FLATPAK_DEST}/retrodeck/steam/
+        # - cp banner_main.png ${FLATPAK_DEST}/retrodeck/steam/
+        # - cp poster_main.png ${FLATPAK_DEST}/retrodeck/steam/
+        # - cp poster_main_nodecklogo.png ${FLATPAK_DEST}/retrodeck/steam/
 
-        # Configuring emulators:
-        - mkdir -p ${FLATPAK_DEST}/retrodeck/emu-configs/
-        # RetroArch
-        - cp retroarch.cfg ${FLATPAK_DEST}/retrodeck/emu-configs/
-        # Dolphin 
-        - cp Dolphin.ini ${FLATPAK_DEST}/retrodeck/emu-configs/
-        # Yuzu
-        - cp yuzu-qt-config.ini ${FLATPAK_DEST}/retrodeck/emu-configs/
-        # Pcsx2
-        - cp PCSX2_ui.ini ${FLATPAK_DEST}/retrodeck/emu-configs/
-        # MelonDS
-        - cp melonDS.ini ${FLATPAK_DEST}/retrodeck/emu-configs/
-        # CITRA
-        - cp citra-qt-config.ini ${FLATPAK_DEST}/retrodeck/emu-configs/
-        # RPCS3
-        - cp config.yml ${FLATPAK_DEST}/retrodeck/emu-configs/
+        # # Configuring emulators:
+        # - mkdir -p ${FLATPAK_DEST}/retrodeck/emu-configs/
+        # # RetroArch
+        # - cp retroarch.cfg ${FLATPAK_DEST}/retrodeck/emu-configs/
+        # # Dolphin 
+        # - cp Dolphin.ini ${FLATPAK_DEST}/retrodeck/emu-configs/
+        # # Yuzu
+        # - cp yuzu-qt-config.ini ${FLATPAK_DEST}/retrodeck/emu-configs/
+        # # Pcsx2
+        # - cp PCSX2_ui.ini ${FLATPAK_DEST}/retrodeck/emu-configs/
+        # # MelonDS
+        # - cp melonDS.ini ${FLATPAK_DEST}/retrodeck/emu-configs/
+        # # CITRA
+        # - cp citra-qt-config.ini ${FLATPAK_DEST}/retrodeck/emu-configs/
+        # # RPCS3
+        # - cp config.yml ${FLATPAK_DEST}/retrodeck/emu-configs/
 
         # Placing appdata
         - mkdir -p ${FLATPAK_DEST}/share/appdata
