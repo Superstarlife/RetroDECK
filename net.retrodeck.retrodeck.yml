@@ -84,8 +84,8 @@ modules:
         # - cp move-roms.sh ${FLATPAK_DEST}/retrodeck/tools/
         # - cp tools-gamelist.xml ${FLATPAK_DEST}/retrodeck/
         
-        # - cp retrodeck.sh /app/bin/retrodeck.sh
-        # - chmod +x /app/bin/retrodeck.sh
+        - cp retrodeck.sh /app/bin/retrodeck.sh
+        - chmod +x /app/bin/retrodeck.sh
         
         # # Desktop entry
         # - cp net.retrodeck.retrodeck.desktop /app/share/applications/net.retrodeck.retrodeck.desktop
