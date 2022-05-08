@@ -184,6 +184,8 @@ jobs:
         run: |
           #cd $GITHUB_WORKSPACE
           sudo flatpak-builder --build-only --user --force-clean --repo=local retrodeck-flatpak-cooker net.retrodeck.retrodeck.yml
+          ls -ln
+          find ~ -iname local
 
       - name: Compressing cache
         run: |
